@@ -6,7 +6,8 @@ function run() {
   var contentDiv = document.getElementById('ossb-content');
   var scrollContainer = document.getElementById('scroll-container');
   var splashOffsetTop = splashContent.offsetTop;
-  var threshold = 150;
+  var splashHeight = splashContent.clientHeight;
+  var threshold = splashHeight / 2;
 
   splashContent.style.opacity = '0.98';
   splashContent.style.transition = '0.33s';
